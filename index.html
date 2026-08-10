@@ -377,9 +377,9 @@
             <button class="tab-button active" onclick="switchTab('premissa')">🏛️ Premissa e Preparação</button>
             <button class="tab-button" onclick="switchTab('regras')">📜 Regras de Jogo</button>
             <button class="tab-button" onclick="switchTab('anatomia')">🎴 Anatomia da Carta</button>
-            <button class="tab-button" onclick="switchTab('galeria')">🖼️ Galeria de Cartas</button>
             <button class="tab-button" onclick="switchTab('duplas')">👥 Modo Duplas</button>
             <button class="tab-button" onclick="switchTab('sets')">🗺️ Conheça os Sets</button>
+            <button class="tab-button" onclick="switchTab('galeria')">🖼️ Galeria de Cartas</button>
         </nav>
 
         <!-- TAB 1: PREMISSA & PRÉ-JOGO -->
@@ -477,131 +477,6 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- TAB 5: MODO DUPLAS -->
-        <div id="duplas" class="tab-content">
-            <div class="panel">
-                <h2 class="section-title">👥 Modo Alternativo: Duplas</h2>
-                <p>
-                    Recomenda-se o formato de duplas para jogos com <strong>seis jogadores ou mais</strong>.
-                </p>
-                <ul>
-                    <li><strong>Contador de Rodadas:</strong> Neste formato, o contador de rodadas não é utilizado. Uma fase termina em apenas uma rodada.</li>
-                    <li><strong>Posicionamento e Turnos:</strong> Cada dupla senta na posição oposta na mesa. Os turnos progridem individualmente como de costume.</li>
-                    <li><strong>Campo Compartilhado:</strong> Os campos de cada jogador da dupla são considerados <strong>um campo só</strong>. Cartas ou efeitos que mencionem "campo" passam a se referir ao seu campo e ao da sua dupla de forma unificada.</li>
-                    <li><strong>Vitória por Dupla:</strong> A dupla com mais pontos ao final da fase recebe uma carta de destino, e a dupla que acumular três cartas de destino vence o jogo. O restante das regras de Telion permanece inalterado.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- TAB 6: CONHEÇA OS SETS -->
-        <div id="sets" class="tab-content">
-            <div class="panel">
-                <h2 class="section-title">🗺️ Os Sets de Telion</h2>
-                <p style="margin-bottom: 25px;">
-                    Conheça os cinco reinos e sets que compõem o universo de Telion, juntamente com suas cartas de set e palavras-chave:
-                </p>
-
-                <!-- CALÍSIA -->
-                <div class="set-card">
-                    <div class="set-img-wrap">
-                        <img src="cartas/Calísia_11.png" alt="Prócles de Calísia">
-                    </div>
-                    <div>
-                        <div class="set-title">1. Prócles de Calísia</div>
-                        <p>
-                            Calísia é a grande cidade da justiça fulminante e da proteção divina. Seus líderes e oradores defendem o povo da corrupção dos tronos, trazendo virtude, salvaguarda e ordem.
-                        </p>
-                        <div class="keyword-badge">Equipamento</div>
-                        <p style="font-size: 0.95rem; color: var(--text-muted);">
-                            Ao ser ativada, esta carta pode ser ligada a outra, colocando-a sob a carta a que será ligada. A carta ativada com Equipamento não pode ser alvo direto de ataques, mas pode ser alvo de efeitos; além disso, ela continua provendo pontos igual ao valor de ativação.
-                        </p>
-
-                        <div class="keyword-badge">Reação</div>
-                        <p style="font-size: 0.95rem; color: var(--text-muted);">
-                            Esta carta pode ser ativada do campo ou diretamente de sua mão a qualquer momento, sem consumir ações do turno. Se for ativada da mão, ponha-a em campo na forma ativada.
-                        </p>
-
-                        <div class="keyword-badge">Salvaguarda</div>
-                        <p style="font-size: 0.95rem; color: var(--text-muted);">
-                            Enquanto estiverem em seu campo, apenas cartas com Salvaguarda podem ser atacadas ou afetadas por efeitos.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- EFELION -->
-                <div class="set-card">
-                    <div class="set-img-wrap">
-                        <img src="cartas/Telion - Efelion_11.png" alt="Stessek de Efelion">
-                    </div>
-                    <div>
-                        <div class="set-title">2. Stessek de Efelion</div>
-                        <p>
-                            Em Efelion, os fios do destino são maleáveis como a fumaça do altar. Dominado pelos astros e pelo sobrenatural, é o reino do mistério, das estrelas noturnas e das sombras.
-                        </p>
-                        <div class="keyword-badge">Oculto</div>
-                        <p style="font-size: 0.95rem; color: var(--text-muted);">
-                            Você pode jogar uma carta virada para baixo; essa carta terá o valor e os efeitos que você disser que ela tem. Outro jogador pode duvidar de suas afirmações. Se você for questionado, revele sua carta: caso ela tenha Oculto, o jogador que duvidou descarta duas cartas de sua mão, e a carta virada para baixo é virada para cima e passa a ter seus valores e efeitos reais; caso não tenha, ela é descartada e você descarta duas cartas de sua mão.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- OSPER -->
-                <div class="set-card">
-                    <div class="set-img-wrap">
-                        <img src="cartas/Telion - Osper_11.png" alt="Tunmir de Osper">
-                    </div>
-                    <div>
-                        <div class="set-title">3. Tunmir de Osper</div>
-                        <p>
-                            Nos campos de Osper, espíritos bravios conquistam a liberdade com perícia, e os dignos herdam o mistério do sagrado metal Osperita para proteger seu povo com armas imortais.
-                        </p>
-                        <div class="keyword-badge">Equipamento</div>
-                        <p style="font-size: 0.95rem; color: var(--text-muted);">
-                            Ao ser ativada, esta carta deve ser ligada a outra. A carta ativada com Equipamento não pode ser alvo direto de ataques, mas pode ser alvo de efeitos; além disso, ela continua provendo pontos igual ao valor de ativação.
-                        </p>
-
-                        <div class="keyword-badge">Reação</div>
-                        <p style="font-size: 0.95rem; color: var(--text-muted);">
-                            Esta carta pode ser ativada do campo ou diretamente de sua mão a qualquer momento, sem consumir ações do turno. Se for ativada da mão, ponha-a em campo na forma ativada.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- LORVAD -->
-                <div class="set-card">
-                    <div class="set-img-wrap">
-                        <img src="cartas/Telion - Lorvad_13.png" alt="Astar de Lorvad">
-                    </div>
-                    <div>
-                        <div class="set-title">4. Astar de Lorvad</div>
-                        <p>
-                            Lorvad, o País dos Cavaleiros. Aqueles que crescem em Lorvad aprendem desde cedo que a vida não é dada, mas conquistada. O caminho é não dobrar os joelhos antes de brandir a lança, cavalgando pelos campos em busca de liberdade eterna.
-                        </p>
-                        <p style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">
-                            (Este set não possui palavras-chave específicas).
-                        </p>
-                    </div>
-                </div>
-
-                <!-- MARGUN -->
-                <div class="set-card">
-                    <div class="set-img-wrap">
-                        <img src="cartas/Telion - Margun_13.png" alt="Erin de Margun">
-                    </div>
-                    <div>
-                        <div class="set-title">5. Erin de Margun</div>
-                        <p>
-                            Em Margun, os segredos dos mortos estão guardados sob o véu do submundo. Seus divinadores e almas pias escutam os sussurros do outro lado, observando a jornada das almas no lugar entre mundos.
-                        </p>
-                        <p style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">
-                            (Este set não possui palavras-chave específicas).
-                        </p>
-                    </div>
-                </div>
-
             </div>
         </div>
 
@@ -817,6 +692,131 @@
                     </div>
                     <div class="gallery-card">
                         <img src="cartas/Telion - Margun_12.png" alt="Paz Eterna">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TAB 5: MODO DUPLAS -->
+        <div id="duplas" class="tab-content">
+            <div class="panel">
+                <h2 class="section-title">👥 Modo Alternativo: Duplas</h2>
+                <p>
+                    Recomenda-se o formato de duplas para jogos com <strong>seis jogadores ou mais</strong>.
+                </p>
+                <ul>
+                    <li><strong>Contador de Rodadas:</strong> Neste formato, o contador de rodadas não é utilizado. Uma fase termina em apenas uma rodada.</li>
+                    <li><strong>Posicionamento e Turnos:</strong> Cada dupla senta na posição oposta na mesa. Os turnos progridem individualmente como de costume.</li>
+                    <li><strong>Campo Compartilhado:</strong> Os campos de cada jogador da dupla são considerados <strong>um campo só</strong>. Cartas ou efeitos que mencionem "campo" passam a se referir ao seu campo e ao da sua dupla de forma unificada.</li>
+                    <li><strong>Vitória por Dupla:</strong> A dupla com mais pontos ao final da fase recebe uma carta de destino, e a dupla que acumular três cartas de destino vence o jogo. O restante das regras de Telion permanece inalterado.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB 6: CONHEÇA OS SETS -->
+        <div id="sets" class="tab-content">
+            <div class="panel">
+                <h2 class="section-title">🗺️ Os Sets de Telion</h2>
+                <p style="margin-bottom: 25px;">
+                    Conheça os cinco reinos e sets que compõem o universo de Telion, juntamente com suas cartas de set e palavras-chave:
+                </p>
+
+                <!-- CALÍSIA -->
+                <div class="set-card">
+                    <div class="set-img-wrap">
+                        <img src="cartas/Calísia_11.png" alt="Prócles de Calísia">
+                    </div>
+                    <div>
+                        <div class="set-title">1. Prócles de Calísia</div>
+                        <p>
+                            Calísia é a grande cidade da justiça fulminante e da proteção divina. Seus líderes e oradores defendem o povo da corrupção dos tronos, trazendo virtude, salvaguarda e ordem.
+                        </p>
+                        <div class="keyword-badge">Equipamento</div>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">
+                            Ao ser ativada, esta carta pode ser ligada a outra, colocando-a sob a carta a que será ligada. A carta ativada com Equipamento não pode ser alvo direto de ataques, mas pode ser alvo de efeitos; além disso, ela continua provendo pontos igual ao valor de ativação.
+                        </p>
+
+                        <div class="keyword-badge">Reação</div>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">
+                            Esta carta pode ser ativada do campo ou diretamente de sua mão a qualquer momento, sem consumir ações do turno. Se for ativada da mão, ponha-a em campo na forma ativada.
+                        </p>
+
+                        <div class="keyword-badge">Salvaguarda</div>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">
+                            Enquanto estiverem em seu campo, apenas cartas com Salvaguarda podem ser atacadas ou afetadas por efeitos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- EFELION -->
+                <div class="set-card">
+                    <div class="set-img-wrap">
+                        <img src="cartas/Telion - Efelion_11.png" alt="Stessek de Efelion">
+                    </div>
+                    <div>
+                        <div class="set-title">2. Stessek de Efelion</div>
+                        <p>
+                            Em Efelion, os fios do destino são maleáveis como a fumaça do altar. Dominado pelos astros e pelo sobrenatural, é o reino do mistério, das estrelas noturnas e das sombras.
+                        </p>
+                        <div class="keyword-badge">Oculto</div>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">
+                            Você pode jogar uma carta virada para baixo; essa carta terá o valor e os efeitos que você disser que ela tem. Outro jogador pode duvidar de suas afirmações. Se você for questionado, revele sua carta: caso ela tenha Oculto, o jogador que duvidou descarta duas cartas de sua mão, e a carta virada para baixo é virada para cima e passa a ter seus valores e efeitos reais; caso não tenha, ela é descartada e você descarta duas cartas de sua mão.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- OSPER -->
+                <div class="set-card">
+                    <div class="set-img-wrap">
+                        <img src="cartas/Telion - Osper_11.png" alt="Tunmir de Osper">
+                    </div>
+                    <div>
+                        <div class="set-title">3. Tunmir de Osper</div>
+                        <p>
+                            Nos campos de Osper, espíritos bravios conquistam a liberdade com perícia, e os dignos herdam o mistério do sagrado metal Osperita para proteger seu povo com armas imortais.
+                        </p>
+                        <div class="keyword-badge">Equipamento</div>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">
+                            Ao ser ativada, esta carta deve ser ligada a outra. A carta ativada com Equipamento não pode ser alvo direto de ataques, mas pode ser alvo de efeitos; além disso, ela continua provendo pontos igual ao valor de ativação.
+                        </p>
+
+                        <div class="keyword-badge">Reação</div>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">
+                            Esta carta pode ser ativada do campo ou diretamente de sua mão a qualquer momento, sem consumir ações do turno. Se for ativada da mão, ponha-a em campo na forma ativada.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- LORVAD -->
+                <div class="set-card">
+                    <div class="set-img-wrap">
+                        <img src="cartas/Telion - Lorvad_13.png" alt="Astar de Lorvad">
+                    </div>
+                    <div>
+                        <div class="set-title">4. Astar de Lorvad</div>
+                        <p>
+                            Lorvad, o País dos Cavaleiros. Aqueles que crescem em Lorvad aprendem desde cedo que a vida não é dada, mas conquistada. O caminho é não dobrar os joelhos antes de brandir a lança, cavalgando pelos campos em busca de liberdade eterna.
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">
+                            (Este set não possui palavras-chave específicas).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- MARGUN -->
+                <div class="set-card">
+                    <div class="set-img-wrap">
+                        <img src="cartas/Telion - Margun_13.png" alt="Erin de Margun">
+                    </div>
+                    <div>
+                        <div class="set-title">5. Erin de Margun</div>
+                        <p>
+                            Em Margun, os segredos dos mortos estão guardados sob o véu do submundo. Seus divinadores e almas pias escutam os sussurros do outro lado, observando a jornada das almas no lugar entre mundos.
+                        </p>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">
+                            (Este set não possui palavras-chave específicas).
+                        </p>
                     </div>
                 </div>
 
