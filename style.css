@@ -170,6 +170,8 @@
             margin-bottom: 16px;
             font-size: 1.05rem;
             color: var(--text-main);
+            text-indent: 20px;
+            text-align: justify;
         }
 
         ul {
@@ -315,14 +317,10 @@
         }
 
         .gallery-card {
-            background: rgba(0, 0, 0, 0.25);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
             padding: 12px;
             text-align: center;
-        }
-
-        .gallery-card img {
             width: 100%;
             height: auto;
             border-radius: 6px;
@@ -331,17 +329,10 @@
             cursor: pointer;
         }
 
-        .gallery-card img:hover {
+        .gallery-card:hover {
             transform: scale(1.5);
             position: relative;
             z-index: 10;
-        }
-
-        .gallery-card-caption {
-            font-size: 0.88rem;
-            color: var(--text-muted);
-            margin-top: 8px;
-            font-family: var(--font-heading);
         }
 
         footer {
@@ -351,4 +342,186 @@
             font-size: 0.95rem;
             border-top: 1px solid var(--border-color);
             margin-top: 40px;
+        }
+
+        .keywords-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 25px 0 35px 0;
+        }
+
+        .kw-dropdown {
+            border-radius: 8px;
+            overflow: hidden;
+            width: fit-content;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .kw-dropdown summary {
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+            padding: 5px 20px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            white-space: nowrap;
+        }
+
+        .kw-dropdown summary::-webkit-details-marker { display: none; }
+
+        .kw-dropdown summary::after {
+            content: "▼";
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .kw-dropdown[open] summary::after {
+            transform: rotate(180deg);
+        }
+
+        .kw-dropdown-content {
+            padding: 0 20px 20px 20px;
+            border-top: 1px dashed rgba(226, 183, 64, 0.2);
+        }
+
+        .kw-item {
+            margin-top: 15px;
+        }
+
+        /* Personagens em Mosaico Duplo Épico */
+        .heroes-showcase {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .hero-banner-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero-banner-card:hover {
+            border-color: var(--accent-gold);
+            box-shadow: 0 8px 25px rgba(226, 183, 64, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .hero-banner-card { grid-template-columns: 1fr; }
+        }
+
+        .hero-banner-img {
+            width: 90%;
+            height: 90%px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-banner-content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-banner-name {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            margin-bottom: 5px;
+        }
+
+        .hero-banner-role {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .hero-banner-bio {
+            font-size: 1.02rem;
+            line-height: 1.7;
+            color: var(--text-main);
+            text-indent: 0;
+            margin: 0;
+        }
+
+        .set-intro {
+             font-size: 1.2rem;
+             margin-bottom: 20px;
+             font-style: italic;
+        }
+
+        .kw-dropdown-item {
+            flex: 1 1 250px;             /* Enfileira na horizontal e expande proporcionalmente */
+            max-width: 320px;            /* Evita que fiquem gigantes em telas muito grandes */
+            border: 1px solid var(--accent-gold);
+            border-radius: 8px;
+            overflow: hidden;
+            height: fit-content;         /* Garante que o dropdown não afete a altura dos vizinhos */
+            transition: background 0.3s ease;
+        }
+
+        .kw-dropdown-item:hover {
+            background: rgba(226, 183, 64, 0.08);
+        }
+
+        /* Botão/Título de cada Palavra-Chave */
+        .kw-dropdown-item summary {
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 10px 16px;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            outline: none;
+        }
+
+        .kw-dropdown-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .kw-dropdown-item summary::after {
+            content: "▼";
+            font-size: 0.75rem;
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .kw-dropdown-item[open] summary::after {
+            transform: rotate(180deg);
+        }
+
+        /* Conteúdo Expandido da Regra */
+        .kw-dropdown-body {
+            padding: 12px 16px;
+            border-top: 1px dashed rgba(226, 183, 64, 0.25);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .kw-dropdown-body p {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin: 0;
         }
