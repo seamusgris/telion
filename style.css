@@ -467,6 +467,9 @@
              font-size: 1.2rem;
              margin-bottom: 20px;
              font-style: italic;
+             border-bottom: 1px solid var(--border-color);
+             padding-bottom: 12px;
+             color: var(--text-muted);
         }
 
         .kw-dropdown-item {
