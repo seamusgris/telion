@@ -10,8 +10,6 @@
             --text-main: #f1f5f9;
             --text-muted: #94a3b8;
             --border-color: rgba(226, 183, 64, 0.22);
-            
-            /* Tipografia otimizada para legibilidade digital */
             --font-heading: 'Cinzel', serif;
             --font-body: 'Lora', system-ui, -apple-system, sans-serif;
         }
@@ -42,7 +40,6 @@
             margin: 0 auto;
         }
 
-        /* Header */
         header {
             text-align: center;
             padding-bottom: 25px;
@@ -81,7 +78,6 @@
             letter-spacing: 2px;
         }
 
-        /* NAVEGAÇÃO POR TABS */
         .tabs-nav {
             display: flex;
             flex-wrap: wrap;
@@ -122,7 +118,6 @@
             box-shadow: 0 0 15px rgba(226, 183, 64, 0.3);
         }
 
-        /* PAINÉIS DE CONTEÚDO */
         .tab-content {
             display: none;
             animation: fadeIn 0.3s ease-in-out;
@@ -184,7 +179,6 @@
             font-size: 1.02rem;
         }
 
-        /* OPÇÕES DE TURNO */
         .options-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -213,7 +207,6 @@
             padding-bottom: 8px;
         }
 
-        /* HIGHLIGHT BOX */
         .highlight-box {
             background: rgba(226, 183, 64, 0.08);
             border-left: 4px solid var(--accent-gold);
@@ -223,7 +216,6 @@
             font-size: 1.02rem;
         }
 
-        /* ANATOMIA DA CARTA */
         .anatomy-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -246,7 +238,6 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.7);
         }
 
-        /* SETS SHOWCASE */
         .set-card {
             background: rgba(0,0,0,0.3);
             border: 1px solid var(--border-color);
@@ -299,7 +290,6 @@
             margin-bottom: 6px;
         }
 
-        /* GALERIA DE CARTAS */
         .gallery-set-title {
             font-family: var(--font-heading);
             font-size: 1.4rem;
@@ -397,7 +387,6 @@
             margin-top: 15px;
         }
 
-        /* Personagens em Mosaico Duplo Épico */
         .heroes-showcase {
             display: flex;
             flex-direction: column;
@@ -473,12 +462,12 @@
         }
 
         .kw-dropdown-item {
-            flex: 1 1 250px;             /* Enfileira na horizontal e expande proporcionalmente */
-            max-width: 320px;            /* Evita que fiquem gigantes em telas muito grandes */
+            flex: 1 1 250px;
+            max-width: 320px;
             border: 1px solid var(--accent-gold);
             border-radius: 8px;
             overflow: hidden;
-            height: fit-content;         /* Garante que o dropdown não afete a altura dos vizinhos */
+            height: fit-content;
             transition: background 0.3s ease;
         }
 
@@ -486,7 +475,6 @@
             background: rgba(226, 183, 64, 0.08);
         }
 
-        /* Botão/Título de cada Palavra-Chave */
         .kw-dropdown-item summary {
             font-family: var(--font-heading);
             color: var(--accent-gold);
@@ -516,7 +504,6 @@
             transform: rotate(180deg);
         }
 
-        /* Conteúdo Expandido da Regra */
         .kw-dropdown-body {
             padding: 12px 16px;
             border-top: 1px dashed rgba(226, 183, 64, 0.25);
